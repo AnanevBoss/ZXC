@@ -1,0 +1,32 @@
+q1 = float (input('Введите число 1: '))
+p=int(input("Введите кол во операций: "))
+i = 0
+for i in range(p):
+    q2 = float (input('Введите число 2: '))
+    a = int (input('Выберите действие \n 1 Сложение \n 2 Вычитание \n 3 Деление \n 4 Умножение \n 5 Степень \n'))
+
+    if a == 1:
+        q1 = q1 + q2
+        print(q1)
+        i+=1
+    if a == 2:
+        q1 = q1 - q2
+        print(q1)
+        i+=1
+    if a == 3:
+        if q2 !=0:
+            q1 = (q1 / q2)
+            print(q1)
+            i+=1
+        else:
+            print("Делить на 0 нельзя")
+    if a == 4:
+        q1 = q1 * q2
+        print(q1)
+        i+=1
+    if a == 5:
+        q1 = q1 ** q2
+        print(q1)
+        i+=1
+print("Конец!")
+
